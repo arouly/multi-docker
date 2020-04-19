@@ -19,8 +19,7 @@ after-success:
     - docker push aymanacc/multi-worker
     - docker push aymanacc/multi-nginx
 
-Deploy: 
-    edge: true
+deploy:
     provider: elasticbeanstalk
     region: us-east-2
     app: multi-docker
